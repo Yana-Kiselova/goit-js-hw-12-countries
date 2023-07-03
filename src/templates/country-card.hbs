@@ -1,0 +1,22 @@
+{{#each this}}
+  <li class='card'>
+
+    <div class='card__content'>
+      <h1 class='card__name'>Name: {{name.common}}</h1>
+      <p class='card__capital'>Capital: {{capital}}</p>
+      <p class='card__population'>Population: {{population}}</p>
+      <p class='card__text'>Neighbouring:</p>
+      <ul class='langs-list'>
+
+        {{#each borders}}
+          <li class='langs-list__item'>{{this}}</li>
+        {{/each}}
+      </ul>
+
+    </div>
+    <div class='card-img-top'>
+      <img src='{{flags.png}}' alt='{{flags.alt}}' />
+    </div>
+  </li>
+
+{{/each}}
