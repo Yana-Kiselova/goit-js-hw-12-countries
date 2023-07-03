@@ -1,15 +1,17 @@
 ul,
 li {
-  list-style: none;
   padding: 0;
 }
-
+body {
+  background-color: whitesmoke;
+}
 .label {
   display: block;
   text-align: center;
   margin-top: 30px;
 }
 .input {
+  border: 2px;
   margin-left: 10px;
   padding: 10px;
 }
@@ -27,12 +29,17 @@ li {
 .card__name,
 .card__text {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.31;
 }
 
 .langs-list {
   text-align: start;
+  padding: 20px;
+}
+
+.langs-list__item {
+  padding: 3px;
 }
 .card-img-top {
   text-align: center;
